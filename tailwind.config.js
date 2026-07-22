@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        background: "#050816",
+        surface: "#131314",
+        "surface-dim": "#131314",
+        "surface-bright": "#3a393a",
+        "surface-container-lowest": "#0e0e0f",
+        "surface-container-low": "#1c1b1d",
+        "surface-container": "#201f21",
+        "surface-container-high": "#2a2a2b",
+        "surface-container-highest": "#353436",
+        "on-surface": "#e5e2e3",
+        "on-surface-variant": "#c7c6cd",
+        "outline": "#919097",
+        "outline-variant": "#46464c",
+        primary: "#c3c5da",
+        "on-primary": "#2c303f",
+        "primary-container": "#050816",
+        "on-primary-container": "#75788a",
+        secondary: "#c5c7c8",
+        tertiary: "#c0c1ff",
+        "on-tertiary-container": "#6568f3",
+        "electric-blue": "#0066ff",
+        "accent-purple": "#a855f7",
+        "accent-emerald": "#10b981",
+        "accent-amber": "#f59e0b"
+      },
+      borderRadius: {
+        'sm': '0.25rem',
+        'DEFAULT': '0.5rem',
+        'md': '0.75rem',
+        'lg': '1rem',
+        'xl': '1.5rem',
+        'full': '9999px',
+      },
+      spacing: {
+        'margin-desktop': '64px',
+        'margin-mobile': '20px',
+        'section-gap': '128px',
+        'gutter': '24px',
+        'container-max': '1200px',
+        'unit': '8px',
+      },
+      fontFamily: {
+        headline: ['Geist', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        label: ['Geist', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
